@@ -34,11 +34,7 @@ Dites comment faire pour lancer votre projet
 
 ## Fabriqué avec
 
-Entrez les programmes/logiciels/ressources que vous avez utilisé pour développer votre projet
-
-_exemples :_
-* [Materialize.css](http://materializecss.com) - Framework CSS (front-end)
-* [Atom](https://atom.io/) - Editeur de textes
+* [GoogleColab](https://colab.research.google.com) - NoteBook (Python)
 
 ## Versions
 
