@@ -4,18 +4,17 @@
 
 This project is a basic neuron in python
 
-## Pour commencer
+## Introduction
 
-Entrez ici les instructions pour bien débuter avec votre projet...
+### What is a perceptron
 
-### Required
+The perceptron can be seen as the simplest type of neural network, it is similar to one neuron. It is a linear classifier.
+
+
+## Required
 
 - Python 3.9.2
 - Numpy 1.19.5
-
-## Start-up
-
-You can start the project on your GoogleColab.
 
 ## Made with
 
