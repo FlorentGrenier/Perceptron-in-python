@@ -54,7 +54,7 @@ _(pour le lien mettez simplement l'URL de votre projets suivi de ``/tags``)_
 
 ## Auteurs
 Listez le(s) auteur(s) du projet ici !
-* **Florent Grenier** _alias_ [@outout14](https://github.com/outout14)
+* **Florent Grenier** _alias_ [@florentgrenier](https://github.com/FlorentGrenier)
 
 Lisez la liste des [contributeurs](https://github.com/your/project/contributors) pour voir qui à aidé au projet !
 
