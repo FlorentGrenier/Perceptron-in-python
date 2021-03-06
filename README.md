@@ -1,7 +1,6 @@
 # Source code of Perceptron in python
-_(juste en dessous des badges sympatiques à placer)_
 
-[![forthebadge](https://forthebadge.com/images/badges/built-for-python.svg)](https://forthebadge.com)
+[![forthebadge](https://forthebadge.com/images/badges/made-with-python.svg)](https://www.python.org/)
 
 Une petite description du projet
 
