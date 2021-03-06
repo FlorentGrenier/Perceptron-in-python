@@ -27,9 +27,9 @@ _exemple_: Executez la commande ``telnet mapscii.me`` pour commencer ensuite [..
 
 Ensuite vous pouvez montrer ce que vous obtenez au final...
 
-## Démarrage
+## Start-up
 
-Dites comment faire pour lancer votre projet
+You can start the project on your GoogleColab.
 
 ## Made with
 
@@ -38,7 +38,7 @@ Dites comment faire pour lancer votre projet
 ## Versions
 
 * **Dernière version stable :** 1.0
-* **Dernière version :** 5.1
+
 Liste des versions : [Cliquer pour afficher](https://github.com/FlorentGrenier/Perceptron-in-python/tags)
 
 ## Authors
