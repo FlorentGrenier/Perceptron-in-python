@@ -2,7 +2,7 @@
 
 [![forthebadge](https://forthebadge.com/images/badges/made-with-python.svg)](https://www.python.org/)
 
-Une petite description du projet
+This project is a basic neuron in python
 
 ## Pour commencer
 
@@ -31,7 +31,7 @@ Ensuite vous pouvez montrer ce que vous obtenez au final...
 
 Dites comment faire pour lancer votre projet
 
-## Fabriqué avec
+## Made with
 
 * [GoogleColab](https://colab.research.google.com) - NoteBook (Python)
 
@@ -40,7 +40,8 @@ Dites comment faire pour lancer votre projet
 * **Dernière version stable :** 1.0
 * **Dernière version :** 5.1
 Liste des versions : [Cliquer pour afficher](https://github.com/FlorentGrenier/Perceptron-in-python/tags)
-## Auteurs
+
+## Authors
 
 * **Florent Grenier** _alias_ [@florentgrenier](https://github.com/FlorentGrenier)
 
