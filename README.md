@@ -34,6 +34,7 @@ You can start the project on your GoogleColab.
 ## Made with
 
 * [GoogleColab](https://colab.research.google.com) - NoteBook (Python)
+* [Siraj Raval](https://www.youtube.com/channel/UCWN3xxRkmTPmbKwht9FuE5A) - AI educator (YouTube)
 
 ## Versions
 
