@@ -2,71 +2,71 @@ from numpy import exp, array, random, dot
 
 class Perceptron():
   def __init__(self):
-    # Lance le générateur de nombres aléatoires pour qu'il génère les mêmes nombres
-    # à chaque exécution du programme.
+    # Start the random number generator to generate the same numbers
+    # each time the program is run.
     random.seed(1)
 
-    # Nous modélisons un seul neurone, avec 3 connexions d'entrée et 1 connexion de sortie.
-    # Nous attribuons des poids aléatoires à une matrice 3 x 1, avec des valeurs comprises entre 0 et 1
+    # We model a single neuron, with 3 input connections and 1 output connection.
+    # We assign random weights to a 3 x 1 matrix, with values ​​between 0 and 1.
     self.synaptic_weights = 2 * random.random((3,1))-1
 
-    # La fonction sigmoïde, qui décrit une courbe en forme de S.
-    # On passe la somme pondérée des entrées via cette fonction à
-    # les normaliser entre 0 et 1.
+    # The sigmoid function, which describes an S-shaped curve.
+    # We pass the weighted sum of the inputs via this function to
+    # normalize them between 0 and 1.
     def __sigmoid(self, x):
       return 1 / (1 + exp(-x))
 
-    # La dérivée de la fonction sigmoïde.
-    # C'est le gradient de la courbe sigmoïde.
-    # Cela indique à quel point nous sommes sûrs du poids existant.
+    # The derivative of the sigmoid function.
+    # This is the gradient of the sigmoid curve.
+    # This indicates how sure we are of the existing weight.
     def __sigmoid_derivative(self, x):
       return x * (1 - x)
 
-    # Le perceptron pense.
+    # The perceptron thinks.
     def think(self, inputs):
-      # Faites passer les entrées à travers notre neurone.
+      # Pass the inputs through the neuron.
       return self.__sigmoid(dot(inputs, self.synaptic_weights))
 
 
-    # Nous formons le perceptron à travers un processus d'essais et d'erreurs.
-    # Avec un ajustement des poids synaptiques à chaque fois.
+    # We train the perceptron through a process of trial and error.
+    # With adjustment of synaptic weights each time.
     def train(self, training_set_inputs, traning_set_outputs, number_of_training_iterations):
       for iteration in xrange(number_of_training_iterations):
 
-        # Faites passer l'ensemble des données de formation dans notre neurone.
+        # Pass all the training data through our neuron.
         output = self.think(training_set_inputs)
 
-        # Calcul l'erreur (la différence entre la sortie souhaitée et la sortie prévue).
+        # Calculate the error (the difference between the desired output and the expected output).
         error = traning_set_outputs - output
 
-        # Multiplie l'erreur par l'entrée et à nouveau par le gradient de la courbe sigmoïde.
-        # Cela signifie que les pondérations moins confiantes sont ajustées davantage.
-        # Cela signifie que les entrées, qui sont nulles, ne modifient pas les poids.
+        # Multiply the error by the input and again by the gradient of the sigmoid curve.
+        # This means less confident weights are adjusted further.
+        # This means that the entries, which are zero, do not modify the weights.
         adjustement = dot(training_set_inputs.T, error * self.__sigmoid_derivative(output))
 
-        # Ajuste les poids.
+        # Adjust the weights.
         self.synaptic_weights = adjustement
 
 if __name__ == "__main__":
 
-  # Initialise un perceptron
+  # Initialize a perceptron
   perceptron = Perceptron()
 
-  print("Poids synaptiques de départ aléatoires : ")
+  print("Random starting synaptic weights : ")
   print(perceptron.synaptic_weights)
 
-  # Ensemble des données d'entraînement. Nous avons 4 exemples, chacun composé de 3 valeurs d'entrée
-  # et 1 valeur de sortie.
+  # All training data. We have 4 examples, each made up of 3 input values
+  # and 1 output value.
   training_set_inputs = array([[0, 0, 1], [1, 1, 1], [1, 0, 1], [0, 1, 1]])
   training_set_outputs = array([[0, 1, 1, 0]]).T
 
-  # Entraînez le réseau neuronal à l'aide d'un ensemble des données d'entraînement.
-  # Le fait 10 000 fois et l'ajuste à chaque fois.
+  # Train the neural network using a set of training data.
+  # Do it 10,000 times and adjust it each time.
   perceptron.train(training_set_inputs, training_set_outputs, 10000)
 
-  print("Nouveaux poids synaptiques après l'entraînement : ")
+  print("New synaptic weights after training : ")
   print(neural_network.synaptic_weights)
 
-  # Testez le réseau neuronal avec une nouvelle situation.
-  print("Considérant la nouvelle situation [1, 0, 0] ->? : ")
+ # Test the neural network with a new situation.
+  print("Considering the new situation [1, 0, 0] ->? : ")
   print(neural_network.think(array([1, 0, 0])))
