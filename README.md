@@ -1,34 +1,34 @@
-# Code source d'un Perceptron en Python
+# Source code of Perceptron in Python
 
 
 [![forthebadge](https://forthebadge.com/images/badges/made-with-python.svg)](https://www.python.org/)
 
-Ce projet est un neurone basique en Python.
+This project is a basic neuron in ¨Python.
 
 ## Introduction
 
-### Qu'est-ce qu'un Perceptron ?
+### What is a perceptron
 
-Le Perceptron peut être considéré comme le type le plus simple de réseau neuronal, il est similaire à un neurone biologique. C'est un classificateur linéaire.
+The perceptron can be seen as the simplest type of neural network, it is similar to one neuron. It is a linear classifier.
 
 
-## Besoins :
+## Required
 
 - Python 3.9.2
 - Numpy 1.19.5
 
-## Réalisé avec :
+## Made with
 
 * [GoogleColab](https://colab.research.google.com) - NoteBook (Python)
 * [Siraj Raval](https://www.youtube.com/channel/UCWN3xxRkmTPmbKwht9FuE5A) - AI educator (YouTube)
 
 ## Versions
 
-* **Dernière version stable :** 1.0
+* **Latest stable version :** 1.0
 
-Liste des versions : [Cliquer pour afficher](https://github.com/FlorentGrenier/Perceptron-in-python/tags)
+List of versions: [Show](https://github.com/FlorentGrenier/Perceptron-in-python/tags)
 
-## Auteurs
+## Authors
 
 * **Florent Grenier** _alias_ [@florentgrenier](https://github.com/FlorentGrenier)
 
