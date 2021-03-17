@@ -1,4 +1,4 @@
-# Code source de'un Perceptron en Python
+# Code source d'un Perceptron en Python
 
 
 [![forthebadge](https://forthebadge.com/images/badges/made-with-python.svg)](https://www.python.org/)
